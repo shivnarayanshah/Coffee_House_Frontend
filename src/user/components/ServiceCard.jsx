@@ -15,9 +15,11 @@ const ServiceCard = () => {
             high-quality ingredients and strictly following preparation
             guidelines.
           </Typography>
-          <Button className="rounded-none h-[48px] w-[153px] mt-4 bg-transparent border-[1px] cursor-pointer border-[#000000] text-black font-Poppins">
-            <Link to="/contactUs">Contact us</Link>
-          </Button>
+          <Link to="/contactUs">
+            <Button className="rounded-none h-[48px] w-[153px] mt-4 bg-transparent border-[1px] cursor-pointer border-[#000000] text-black font-Poppins">
+              Contact us
+            </Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center ">
