@@ -173,11 +173,11 @@ const Header = () => {
           >
             Contact
           </Link>
-          <div className="flex items-center gap-2">
-            <FaMagnifyingGlass
-              className="cursor-pointer"
-              onClick={() => setSearchVisible(!isSearchVisible)}
-            />
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => setSearchVisible(!isSearchVisible)}
+          >
+            <FaMagnifyingGlass />
             <span>Search</span>
           </div>
 
