@@ -1,7 +1,8 @@
 import { Button, Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ServiceCard = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex flex-col lg:flex-row  justify-between  gap-8  mt-8 md:mt-16 lg:mt-24">
@@ -15,11 +16,13 @@ const ServiceCard = () => {
             high-quality ingredients and strictly following preparation
             guidelines.
           </Typography>
-          <Link to="/contactUs">
-            <Button className="rounded-none h-[48px] w-[153px] mt-4 bg-transparent border-[1px] cursor-pointer border-[#000000] text-black font-Poppins">
-              Contact us
-            </Button>
-          </Link>
+
+          <Button
+            className="rounded-none h-[48px] w-[153px] mt-4 bg-transparent border-[1px] cursor-pointer border-[#000000] text-black font-Poppins"
+            onClick={() => navigate("/contactUs")}
+          >
+            Contact us
+          </Button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center ">
