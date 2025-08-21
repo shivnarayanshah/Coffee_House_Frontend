@@ -3,7 +3,7 @@ import Footer from "./components/Footer.jsx";
 const AboutPage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-between">
-      <div className="min-h-screen bg-white px-6 py-12 lg:px-32 text-gray-800">
+      <div className=" bg-white px-6 py-12 lg:px-32 text-gray-800">
         <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-[#6F4E37] mb-4">About Us</h1>

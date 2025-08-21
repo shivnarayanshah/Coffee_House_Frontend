@@ -19,8 +19,8 @@ const ContactUsPage = () => {
   const [addContact, { isLoading }] = useAddContactMutation();
   const navigate = useNavigate();
   return (
-    <div>
-      <div className=" min-h-screen flex-1 flex items-center justify-center px-4 py-10">
+    <div className="flex flex-col justify-between min-h-screen">
+      <div className=" flex justify-center items-center px-4 py-10">
         <div className="w-full max-w-3xl bg-white rounded-xl shadow-md p-6 sm:p-8">
           <Typography
             variant="h4"

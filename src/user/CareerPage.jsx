@@ -26,8 +26,8 @@ const CareerPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <div className=" min-h-screen flex-grow px-4 sm:px-6 md:px-16 lg:px-32 py-10">
+    <div className="min-h-screen  flex flex-col justify-between">
+      <div className=" flex-grow px-4 sm:px-6 md:px-16 lg:px-32 py-10">
         <Typography
           variant="h4"
           className="text-center font-bold text-[#6F4E37] mb-10"

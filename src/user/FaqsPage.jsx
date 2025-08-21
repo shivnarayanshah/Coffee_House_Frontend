@@ -12,8 +12,8 @@ const FaqsPage = () => {
   };
 
   return (
-    <div>
-      <div className=" min-h-screen flex-grow px-4 sm:px-8 md:px-20 lg:px-40 py-10 bg-[#fdfaf7]">
+    <div className="min-h-screen  flex flex-col justify-between">
+      <div className=" flex-grow px-4 sm:px-8 md:px-20 lg:px-40 py-10 bg-[#fdfaf7]">
         <Typography
           variant="h4"
           className="text-center font-bold text-[#6F4E37] mb-8"

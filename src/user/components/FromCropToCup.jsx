@@ -2,8 +2,10 @@ import { Button, Typography } from "@material-tailwind/react";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const FromCropToCup = () => {
+  const navigate = useNavigate();
   return (
     <div className=" flex flex-col lg:flex-row h-auto lg:h-[696px] gap-8 px-4 md:px-12 lg:ml-32   ">
       {/* Left Section */}
@@ -22,7 +24,10 @@ const FromCropToCup = () => {
           </div>
 
           <div className="space-y-6">
-            <Button className="bg-[#6A3D2A] rounded-none h-[48px] w-[143px] cursor-pointer">
+            <Button
+              className="bg-[#6A3D2A] rounded-none h-[48px] w-[143px] cursor-pointer"
+              onClick={() => navigate("/services")}
+            >
               See More
             </Button>
             <div className="flex gap-4 text-xl text-[#6A3D2A]">

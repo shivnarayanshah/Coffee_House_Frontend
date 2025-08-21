@@ -8,8 +8,8 @@ const TrainingPage = () => {
   const { data: trainings = [], isLoading } = useGetAllTrainingQuery();
 
   return (
-    <div>
-      <div className=" min-h-screen px-4 sm:px-6 py-12">
+    <div className="flex flex-col justify-between min-h-screen">
+      <div className="  px-4 sm:px-6 py-12">
         <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
           <Typography className="text-gray-700 font-light text-lg">
             Himalayan Java Barista Coffee School was introduced to promote the

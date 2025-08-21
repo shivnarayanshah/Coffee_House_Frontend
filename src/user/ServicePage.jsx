@@ -12,8 +12,8 @@ import { BASE_URL } from "../api/mainApi.jsx";
 const ServicePage = () => {
   const { data: services = [], isLoading } = useGetAllServiceQuery();
   return (
-    <div>
-      <div className=" px-6 py-12 bg-gray-50 min-h-screen">
+    <div className="min-h-screen flex flex-col justify-between">
+      <div className=" px-6 py-12 bg-gray-50 ">
         <div className="max-w-4xl mx-auto text-center mb-12 space-y-4">
           <Typography className="text-gray-700">
             Himalayan Java offers its customers the best-tasting coffee

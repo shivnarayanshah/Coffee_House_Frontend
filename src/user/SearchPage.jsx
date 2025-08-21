@@ -55,8 +55,8 @@ const SearchPage = () => {
     );
 
   return (
-    <div>
-      <div className=" min-h-screen p-6 sm:p-10 max-w-6xl mx-auto w-full">
+    <div className="min-h-screen  flex flex-col justify-between">
+      <div className="  p-6 sm:p-10 max-w-6xl mx-auto w-full">
         <h2 className="text-2xl font-bold text-center mb-10">
           Search Results for:{" "}
           <span className="text-[#6F4E37]">"{keyword}"</span>

@@ -27,8 +27,8 @@ const menuItems = [
 const MenuPage = () => {
   const { data } = useGetAllMenuQuery();
   return (
-    <div>
-      <div className="min-h-screen bg-[#F6EDE0] py-12 px-6 sm:px-12 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-32">
+    <div className="min-h-screen">
+      <div className=" bg-[#F6EDE0] py-12 px-6 sm:px-12 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-32">
         {menuItems.map((item, idx) => (
           <div
             key={idx}
