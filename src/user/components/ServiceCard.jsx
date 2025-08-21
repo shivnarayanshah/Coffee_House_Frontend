@@ -1,5 +1,5 @@
 import { Button, Typography } from "@material-tailwind/react";
-import React from "react";
+import { Link } from "react-router-dom";
 
 const ServiceCard = () => {
   return (
@@ -16,12 +16,12 @@ const ServiceCard = () => {
             guidelines.
           </Typography>
           <Button className="rounded-none h-[48px] w-[153px] mt-4 bg-transparent border-[1px] cursor-pointer border-[#000000] text-black font-Poppins">
-            Contact us
+            <Link to="/contactUs">Contact us</Link>
           </Button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center ">
-          <div className=" flex flex-col items-center justify-center gap-4">
+          <div className=" flex flex-col items-center justify-center gap-4  hover:scale-105 duration-300">
             <img src="/Scard1.png" alt="" />
             <Typography className="font-Poppins" variant="h5">
               Nepali Coffee Beans
@@ -30,7 +30,7 @@ const ServiceCard = () => {
               Himalayan Java offers its customers with locally brewed taste.
             </Typography>
           </div>
-          <div className=" flex flex-col items-center justify-center gap-4">
+          <div className=" flex flex-col items-center justify-center gap-4 hover:scale-105 duration-300">
             <img src="/Scard1.png" alt="" />
             <Typography variant="h5" className="font-Poppins">
               Barista Training
@@ -40,7 +40,7 @@ const ServiceCard = () => {
               culture of vocational training in Nepal.
             </Typography>
           </div>
-          <div className=" flex flex-col items-center justify-center gap-4">
+          <div className=" flex flex-col items-center justify-center gap-4 hover:scale-105 duration-300">
             <img src="/Scard1.png" alt="" />
             <Typography variant="h5" className="font-Poppins">
               Bakery Equipments
@@ -50,7 +50,7 @@ const ServiceCard = () => {
               and products in Nepal.
             </Typography>
           </div>
-          <div className=" flex flex-col items-center justify-center gap-4">
+          <div className=" flex flex-col items-center justify-center gap-4 hover:scale-105 duration-300">
             <img src="/Scard1.png" alt="" />
             <Typography variant="h5" className="font-Poppins">
               Fresh Bakery Items

@@ -56,7 +56,10 @@ const Menus = () => {
 
       <div className="bg-[#F6EDE0] py-8 px-16 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-between  ">
         {menuItems.map((item, idx) => (
-          <div key={idx} className="flex items-start gap-4 ">
+          <div
+            key={idx}
+            className="flex items-start gap-4 hover:scale-105 duration-300 "
+          >
             <img
               src={item.img}
               alt={item.name}

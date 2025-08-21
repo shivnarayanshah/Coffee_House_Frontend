@@ -9,7 +9,11 @@ const menuItems = [
   { name: "Cappuccino", price: "Rs 185", img: "cappuccino.jpg" },
   { name: "Caffe Latte", price: "Rs 180", img: "caffe-latte.jpg" },
   { name: "Milk tea", price: "Rs 80", img: "milk-tea.jpg" },
-  { name: "Cafe latte with Cookie", price: "Rs 365", img: "latte-cookie.jpg" },
+  {
+    name: "Cafe latte with Cookie",
+    price: "Rs 365",
+    img: "cafe-latte-cookie.jpg",
+  },
   { name: "Croissant", price: "Rs 120", img: "croissant.jpg" },
   { name: "Baguette", price: "Rs 120", img: "baguette.jpg" },
   { name: "Rolls", price: "Rs 150", img: "rolls.jpg" },
@@ -26,7 +30,10 @@ const MenuPage = () => {
     <div>
       <div className="min-h-screen bg-[#F6EDE0] py-12 px-6 sm:px-12 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-32">
         {menuItems.map((item, idx) => (
-          <div key={idx} className="flex items-center gap-4  rounded-lg p-4">
+          <div
+            key={idx}
+            className="flex items-center gap-4  rounded-lg p-4 hover:scale-105 duration-300"
+          >
             <img
               src={item.img}
               alt={item.name}
@@ -44,7 +51,10 @@ const MenuPage = () => {
         ))}
         {data &&
           data.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-4  rounded-lg p-4">
+            <div
+              key={idx}
+              className="flex items-center gap-4  rounded-lg p-4 hover:scale-105 duration-300"
+            >
               <img
                 src={`${BASE_URL}${item.image}`}
                 alt={item.title}

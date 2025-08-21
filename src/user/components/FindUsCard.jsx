@@ -14,7 +14,7 @@ const locations = [
 const FindUsCard = () => {
   return (
     <>
-      <div className="flex flex-col items-center text-center gap-6 mt-8 md:mt-16 lg:mt-24">
+      <div className="flex flex-col items-center text-center gap-6 mt-8 md:mt-16 lg:mt-24 ">
         <Typography variant="" className="text-[36px] font-Poppins font-bold">
           Find Us
         </Typography>
@@ -24,11 +24,11 @@ const FindUsCard = () => {
         </Typography>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10 px-4 ">
         {locations.map((location, index) => (
           <div
             key={index}
-            className="w-full max-w-[300px] mx-auto rounded-[20px] shadow-lg "
+            className="w-full max-w-[300px] mx-auto rounded-[20px] shadow-lg hover:scale-105 duration-300 "
           >
             <img
               src={location.image}
