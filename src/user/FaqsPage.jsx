@@ -47,6 +47,7 @@ const FaqsPage = () => {
           ))}
         </div>
       )}
+      <Footer />
     </div>
   );
 };

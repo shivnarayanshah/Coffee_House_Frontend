@@ -42,6 +42,7 @@ const TeamPage = () => {
           ))}
         </div>
       )}
+      <Footer />
     </div>
   );
 };

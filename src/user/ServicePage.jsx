@@ -42,6 +42,7 @@ const ServicePage = () => {
           ))
         )}
       </div>
+      <Footer />
     </div>
   );
 };

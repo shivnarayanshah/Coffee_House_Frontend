@@ -1,5 +1,6 @@
 import { useGetAllMenuQuery } from "../api/menuApi.jsx";
 import { BASE_URL } from "../api/mainApi.jsx";
+import Footer from "./components/Footer.jsx";
 
 const menuItems = [
   { name: "Americano", price: "Rs 150", img: "americano.jpg" },
@@ -22,42 +23,45 @@ const menuItems = [
 const MenuPage = () => {
   const { data } = useGetAllMenuQuery();
   return (
-    <div className="min-h-screen bg-[#F6EDE0] py-12 px-6 sm:px-12 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-32">
-      {menuItems.map((item, idx) => (
-        <div key={idx} className="flex items-center gap-4  rounded-lg p-4">
-          <img
-            src={item.img}
-            alt={item.name}
-            className="w-24 h-24 object-cover rounded-lg"
-          />
-          <div>
-            <h4 className="text-md font-semibold font-Poppins text-[#050706]">
-              {item.name}
-            </h4>
-            <p className="text-[#68737F] text-sm font-Poppins mt-1">
-              {item.price}
-            </p>
-          </div>
-        </div>
-      ))}
-      {data &&
-        data.map((item, idx) => (
+    <div>
+      <div className="min-h-screen bg-[#F6EDE0] py-12 px-6 sm:px-12 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-32">
+        {menuItems.map((item, idx) => (
           <div key={idx} className="flex items-center gap-4  rounded-lg p-4">
             <img
-              src={`${BASE_URL}${item.image}`}
-              alt={item.title}
+              src={item.img}
+              alt={item.name}
               className="w-24 h-24 object-cover rounded-lg"
             />
             <div>
               <h4 className="text-md font-semibold font-Poppins text-[#050706]">
-                {item.title}
+                {item.name}
               </h4>
               <p className="text-[#68737F] text-sm font-Poppins mt-1">
-                {`Rs ${item.price}`}
+                {item.price}
               </p>
             </div>
           </div>
         ))}
+        {data &&
+          data.map((item, idx) => (
+            <div key={idx} className="flex items-center gap-4  rounded-lg p-4">
+              <img
+                src={`${BASE_URL}${item.image}`}
+                alt={item.title}
+                className="w-24 h-24 object-cover rounded-lg"
+              />
+              <div>
+                <h4 className="text-md font-semibold font-Poppins text-[#050706]">
+                  {item.title}
+                </h4>
+                <p className="text-[#68737F] text-sm font-Poppins mt-1">
+                  {`Rs ${item.price}`}
+                </p>
+              </div>
+            </div>
+          ))}
+      </div>
+      <Footer />
     </div>
   );
 };

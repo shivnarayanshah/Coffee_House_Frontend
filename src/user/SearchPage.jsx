@@ -55,24 +55,28 @@ const SearchPage = () => {
     );
 
   return (
-    <div className=" min-h-screen p-6 sm:p-10 max-w-6xl mx-auto w-full">
-      <h2 className="text-2xl font-bold text-center mb-10">
-        Search Results for: <span className="text-[#6F4E37]">"{keyword}"</span>
-      </h2>
-
-      {isAllEmpty ? (
-        <div className="text-center text-gray-500 text-lg">
-          No matches found for{" "}
+    <div>
+      <div className=" min-h-screen p-6 sm:p-10 max-w-6xl mx-auto w-full">
+        <h2 className="text-2xl font-bold text-center mb-10">
+          Search Results for:{" "}
           <span className="text-[#6F4E37]">"{keyword}"</span>
-        </div>
-      ) : (
-        <>
-          <Section title="Menu Items" items={menuResults} />
-          <Section title="Services" items={serviceResults} />
-          <Section title="Trainings" items={trainingResults} />
-          <Section title="Find Us" items={findUsResult} />
-        </>
-      )}
+        </h2>
+
+        {isAllEmpty ? (
+          <div className="text-center text-gray-500 text-lg">
+            No matches found for{" "}
+            <span className="text-[#6F4E37]">"{keyword}"</span>
+          </div>
+        ) : (
+          <>
+            <Section title="Menu Items" items={menuResults} />
+            <Section title="Services" items={serviceResults} />
+            <Section title="Trainings" items={trainingResults} />
+            <Section title="Find Us" items={findUsResult} />
+          </>
+        )}
+      </div>
+      <Footer />
     </div>
   );
 };

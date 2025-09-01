@@ -3,6 +3,7 @@ import FindUsCard from "./components/FindUsCard.jsx";
 import FromCropToCup from "./components/FromCropToCup.jsx";
 import Menus from "./components/Menus.jsx";
 import TestimonialCard from "./components/TestimonialCard.jsx";
+import Footer from "./components/Footer.jsx";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <Menus />
       </div>
       <TestimonialCard />
+      <Footer />
     </div>
   );
 };

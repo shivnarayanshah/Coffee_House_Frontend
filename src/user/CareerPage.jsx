@@ -75,6 +75,7 @@ const CareerPage = () => {
           ))}
         </div>
       )}
+      <Footer />
     </div>
   );
 };

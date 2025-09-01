@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "./components/Footer.jsx";
 import { Card, Typography } from "@material-tailwind/react";
 import { BASE_URL } from "../api/mainApi.jsx";
@@ -65,6 +64,7 @@ const TrainingPage = () => {
           ))
         )}
       </div>
+      <Footer />
     </div>
   );
 };
